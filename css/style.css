@@ -1,0 +1,151 @@
+:root {
+    /* Fuentes */
+    --fuentePrincipal: 'Poppins', sans-serif;
+    --fuentetexto: 'Montserrat Alternates', sans-serif;
+    --fuenteSecundaria: 'DM Mono', monospace;
+    /* Colores */
+    --blanco: #ffffff;
+    --grisOscuro: #2E2D2D;
+    --grisClaro: #B6B3B2;
+    --rojoIia: #FE0000;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* UTILIDADES */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+hr {
+    border: 1px solid var(--grisClaro)
+}
+
+
+/* BARRA */
+
+@media(min-width: 768px) {
+    .logo-barra {
+        width: 5%;
+    }
+}
+
+#barra-navegacion li a {
+    color: var(--blanco) !important;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+
+/* BARRA MÓVIL*/
+
+.navbar-dark .navbar-toggler {
+    color: var(--blanco);
+    border-color: var(--blanco);
+    background-color: rgba(52, 58, 64, .9);
+}
+
+
+/* HEADER */
+
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.masthead::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.logo {
+    width: 25%;
+}
+
+.header .navbar {
+    background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.hero-pags::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+
+/* INDEX */
+
+@media(min-width: 768px) {
+    img.card-img-top::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.50);
+    }
+    img.card-img-top:hover {
+        transform: scale(1.05);
+    }
+    img.card-img-top {
+        transition: transform .5s ease;
+    }
+}
+
+
+/* FOOTER */
+
+footer h5 {
+    color: var(--rojoIia);
+}
+
+.rentame {
+    width: 30%;
+}
+
+.lista-footer a {
+    font-size: 1.5rem;
+}
+
+.lista-footer a:hover {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.sociales a {
+    font-size: 2rem;
+}
+
+.sociales a:hover {
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .sociales a {
+        margin-left: 40px;
+    }
+}
